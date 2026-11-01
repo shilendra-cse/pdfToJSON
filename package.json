@@ -26,13 +26,16 @@
   "author": "Shilendra Singh <shilendrasingh@example.com>",
   "license": "MIT",
   "dependencies": {
-    "pdfjs-dist": "^3.4.120"
+    "pdfjs-dist": "^6.4.299"
   },
   "devDependencies": {
-    "@types/node": "^18.0.0",
-    "ts-node": "^10.9.1",
-    "tsx": "^4.20.5",
-    "typescript": "^5.0.0"
+    "@types/node": "^26.6.6",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "engines": {
+    "node": "^22.13.0 || >=24.0.0"
   },
   "repository": {
     "type": "git",

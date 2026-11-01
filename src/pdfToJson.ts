@@ -1,5 +1,4 @@
 import fs from "fs";
-import * as pdfjsLib from "pdfjs-dist/legacy/build/pdf.mjs";
 
 export interface PdfTextItem {
   text: string;
@@ -65,7 +64,7 @@ export async function pdfToJson(
 ): Promise<PdfJson> {
   const { scale = 1.0, includeLinks = true, outputPath } = options;
 
-  // @ts-ignore - PDF.js types issue with ESM
+  const pdfjsLib = await import("pdfjs-dist/legacy/build/pdf.mjs");
   const loadingTask = pdfjsLib.getDocument({ data: pdfData });
   const pdf = await loadingTask.promise;
 

@@ -16,7 +16,7 @@ A TypeScript utility that converts PDF documents into structured JSON data while
 ### Prerequisites
 
 Make sure you have the following installed on your system:
-- Node.js (v16 or higher)
+- Node.js (v22.13 or higher, or v24 or higher)
 - npm (v7 or higher) or yarn
 
 ### Install the package
